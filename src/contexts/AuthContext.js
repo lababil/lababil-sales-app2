@@ -80,22 +80,30 @@ export const AuthProvider = ({ children }) => {
 
   const login = async (username, password) => {
     try {
-      // Find user by username
-      const foundUser = Object.values(users).find(u => u.username === username);
-      
-      if (!foundUser || foundUser.password !== password) {
-        throw new Error('Username atau password salah');
+      const response = await fetch('/api/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ username, password }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Login failed');
       }
 
-      // Remove password before storing
-      const { password: _, ...userWithoutPassword } = foundUser;
-      
-      setUser(userWithoutPassword);
-      localStorage.setItem('lababil_user', JSON.stringify(userWithoutPassword));
-      
-      return { success: true, user: userWithoutPassword };
+      if (data.success) {
+        setUser(data.user);
+        localStorage.setItem('lababil_user', JSON.stringify(data.user));
+        return { success: true, user: data.user };
+      } else {
+        throw new Error(data.error || 'Login failed');
+      }
     } catch (error) {
-      return { success: false, error: error.message };
+      console.error('Login error:', error);
+      return { success: false, error: 'An error occurred during login. Please try again.' };
     }
   };
 
