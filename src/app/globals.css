@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+/* Dark theme support */
+.dark {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 15, 23, 42;
+  --background-end-rgb: 30, 41, 59;
+}
+
+.dark body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+/* Ensure all text is visible in dark theme */
+.dark input,
+.dark textarea,
+.dark select {
+  color: rgb(255, 255, 255) !important;
+  background-color: rgb(30, 41, 59) !important;
+  border-color: rgb(51, 65, 85) !important;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder,
+.dark select option {
+  color: rgb(156, 163, 175) !important;
+}
+
+/* Dark theme styling for components */
+.dark .bg-white {
+  background-color: rgb(30, 41, 59) !important;
+}
+
+.dark .bg-gray-50 {
+  background-color: rgb(15, 23, 42) !important;
+}
+
+.dark .bg-gray-100 {
+  background-color: rgb(51, 65, 85) !important;
+}
+
+.dark .text-gray-900 {
+  color: rgb(255, 255, 255) !important;
+}
+
+.dark .text-gray-700 {
+  color: rgb(203, 213, 225) !important;
+}
+
+.dark .text-gray-600 {
+  color: rgb(156, 163, 175) !important;
+}
+
+.dark .text-gray-500 {
+  color: rgb(100, 116, 139) !important;
+}
+
+.dark .border-gray-200 {
+  border-color: rgb(51, 65, 85) !important;
+}
+
+.dark .border-gray-300 {
+  border-color: rgb(71, 85, 105) !important;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
