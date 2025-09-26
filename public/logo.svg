@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="45.0281425891182 43.5 134.33395872420263 186" style="max-height: 500px" width="134.33395872420263" height="186">
+  <defs>
+    
+    <linearGradient y2="100%" x2="100%" y1="0%" x1="0%" id="blueGrad">
+      <stop style="stop-color:#4A90E2;stop-opacity:1" offset="0%"/>
+      <stop style="stop-color:#2E5BBA;stop-opacity:1" offset="50%"/>
+      <stop style="stop-color:#1E3A8A;stop-opacity:1" offset="100%"/>
+    </linearGradient>
+    
+    <linearGradient y2="100%" x2="100%" y1="0%" x1="0%" id="silverGrad">
+      <stop style="stop-color:#E5E7EB;stop-opacity:1" offset="0%"/>
+      <stop style="stop-color:#9CA3AF;stop-opacity:1" offset="50%"/>
+      <stop style="stop-color:#6B7280;stop-opacity:1" offset="100%"/>
+    </linearGradient>
+    
+    <linearGradient y2="100%" x2="0%" y1="0%" x1="0%" id="textBlueGrad">
+      <stop style="stop-color:#3B82F6;stop-opacity:1" offset="0%"/>
+      <stop style="stop-color:#1E40AF;stop-opacity:1" offset="100%"/>
+    </linearGradient>
+    
+    <linearGradient y2="100%" x2="0%" y1="0%" x1="0%" id="textSilverGrad">
+      <stop style="stop-color:#64748B;stop-opacity:1" offset="0%"/>
+      <stop style="stop-color:#475569;stop-opacity:1" offset="100%"/>
+    </linearGradient>
+    
+    
+    <filter height="200%" width="200%" y="-50%" x="-50%" id="shadow">
+      <feDropShadow flood-opacity="0.3" flood-color="#000000" stdDeviation="3" dy="4" dx="2"/>
+    </filter>
+  </defs>
+  
+  
+  <g filter="url(#shadow)">
+    
+    <path stroke-width="1" stroke="#1E3A8A" fill="url(#blueGrad)" d="M50 50 L50 150 L150 150 L150 130 L70 130 L70 50 Z"/>
+    
+    
+    
+    <path stroke-width="1" stroke="#6B7280" fill="url(#silverGrad)" d="M78 55 L78 115 L98 115 L98 55 Z"/>
+    
+    
+    <path stroke-width="1" stroke="#6B7280" fill="url(#silverGrad)" d="M78 55 L118 55 Q125 55 125 65 Q125 72 120 75 Q115 77 110 77 L78 77 Z"/>
+    
+    
+    <path stroke-width="1" stroke="#6B7280" fill="url(#silverGrad)" d="M78 77 L108 77 L108 83 L78 83 Z"/>
+    
+    
+    <path stroke-width="1" stroke="#6B7280" fill="url(#silverGrad)" d="M78 83 L130 83 Q145 83 145 100 Q145 110 140 115 Q135 115 125 115 L78 115 Z"/>
+    
+    
+    <path opacity="0.7" fill="#E5E7EB" d="M80 57 L80 113 L85 113 L85 57 Z"/>
+    <path opacity="0.5" fill="#E5E7EB" d="M80 57 L115 57 Q120 57 120 62 Q120 65 118 67 L80 67 Z"/>
+    <path opacity="0.5" fill="#E5E7EB" d="M80 85 L127 85 Q135 85 135 93 Q135 100 130 103 L80 103 Z"/>
+    
+    
+    <circle stroke-width="2" stroke="url(#silverGrad)" fill="none" r="10" cy="100" cx="115"/>
+    
+    
+    <circle stroke-width="1" stroke="#1E40AF" fill="url(#blueGrad)" r="6" cy="100" cx="115"/>
+    
+    
+    <circle fill="#1E40AF" r="3" cy="100" cx="115"/>
+    
+    
+    <circle fill="#3B82F6" r="2" cy="63" cx="95"/>
+    <circle fill="#3B82F6" r="1.5" cy="61" cx="102"/>
+    <circle fill="#3B82F6" r="1.5" cy="64" cx="107"/>
+    <circle fill="#3B82F6" r="1.5" cy="69" cx="104"/>
+    
+    
+    <line stroke-width="1" stroke="#3B82F6" y2="61" x2="102" y1="63" x1="95"/>
+    <line stroke-width="1" stroke="#3B82F6" y2="64" x2="107" y1="61" x1="102"/>
+    <line stroke-width="1" stroke="#3B82F6" y2="69" x2="104" y1="64" x1="107"/>
+    <line stroke-width="1" stroke="#3B82F6" y2="63" x2="95" y1="69" x1="104"/>
+  </g>
+  
+  
+  <g filter="url(#shadow)">
+    <text fill="url(#textBlueGrad)" font-weight="bold" font-size="28" font-family="Arial, sans-serif" y="200" x="50">LABABIL</text>
+  </g>
+  
+  
+  <g filter="url(#shadow)">
+    <text fill="url(#textSilverGrad)" font-weight="normal" font-size="18" font-family="Arial, sans-serif" y="225" x="50">solution</text>
+  </g>
+</svg>
